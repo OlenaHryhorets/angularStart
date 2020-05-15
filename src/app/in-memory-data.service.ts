@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { Human } from './human';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +10,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 1, age: 22, name: 'Helen' },
       { id: 2, age: 31, name: 'Lena' },
       { id: 3, age: 32, name: 'Dmytro' },
-      { id: 4, age: 33, name: 'Celena' },
+      { id: 4, age: 33, name: 'Tomas' },
       { id: 5, age: 38, name: 'Mircha' },
       { id: 6, age: 24, name: 'Ricky' },
       { id: 7, age: 27, name: 'Dima' },

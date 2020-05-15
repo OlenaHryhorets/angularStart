@@ -36,5 +36,5 @@ export class HumanSearchComponent implements OnInit {
     );
   }
 }
-//Remember that the component class does not subscribe to the heroes$ observable.
+//Remember that the component class does not subscribe to the humans$ observable.
 // That's the job of the AsyncPipe in the template.

@@ -8,6 +8,8 @@ import { catchError, map, tap } from 'rxjs/operators';
 /** The @Injectable() decorator accepts a metadata object for the service,
  the same way the @Component() decorator did for your component classes*/
 @Injectable({
+  /** we declare that this service should be created
+   by the root application injector.*/
   providedIn: 'root'
 })
 export class HumanService {
