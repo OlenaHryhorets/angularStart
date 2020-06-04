@@ -39,5 +39,17 @@
       <button (click)="toggleDisabled()">Toggle disabled property for Test Button</button>
     </div>
   </div>
+  <div>
+      <p [appHighlight]>Hover this paragraph to see change color by own attribute directive "appHighlight".</p>
+      <h3>My First Attribute Directive</h3>
 
+      <h4>Pick a highlight color</h4>
+      <div>
+        <input type="radio" name="colors" (click)="color='lightgreen'">Green
+        <input type="radio" name="colors" (click)="color='yellow'">Yellow
+        <input type="radio" name="colors" (click)="color='cyan'">Cyan
+      </div>
+      <p [appHighlight]="color">Highlight me!</p>
+      <p [appHighlight]="color" defaultColor="violet">Highlight me too!</p>
+  </div>
 </div>

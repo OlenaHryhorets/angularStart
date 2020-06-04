@@ -8,6 +8,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 
 export class SomeComponent {
 
+  color : string;
   @ViewChild('bindingInput') bindingInput: ElementRef;
 
   isUnchanged = true;

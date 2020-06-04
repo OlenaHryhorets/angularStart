@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
 
     /*You always import the Component symbol from the Angular core library and
       annotate the component class with @Component.
@@ -11,6 +12,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularStart';
+
 }
 /* The ngOnInit() is a lifecycle hook. Angular calls ngOnInit() shortly after creating a component.
  It's a good place to put initialization logic.
