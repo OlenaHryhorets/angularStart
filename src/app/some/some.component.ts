@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 
+
 @Component({
   selector: 'app-some',
   templateUrl: './some.component.html',
@@ -32,6 +33,7 @@ export class SomeComponent {
     testButton.disabled = !testButton.disabled;
     console.warn(testButton.disabled);
   }
+
 }
 
 

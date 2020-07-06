@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import {interval, Observable, Subject} from 'rxjs';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { Human } from '../human';
 import { HumanService } from '../human.service';
@@ -24,6 +24,14 @@ export class HumanSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    // Create an Observable that will publish a value on an interval
+    const secondsCounter = interval(1000);
+    // Subscribe to begin publishing values
+    secondsCounter.subscribe(n =>
+      console.log(`It's been ${n} seconds since subscribing!`));
+
+
     this.humans$ = this.searchTerms.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
